@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="styles/movies.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="Home.html">MyMDb</a> </div>
+            <div class="navbarlinks">
+                <div><a href="Movies.html">Movies</a></div>
+                <div><a href="#">TV Shows</a></div>
+                <div><a href="List.html">My List</a></div>
+                <div><a href="#">Profile</a></div>
+                <div><a href="About.html">About</a></div>
+            </div>
+            <ul class="navbarbuttons">
+                <button><a href="#">SignIn</a></button>
+                <button><a href="Register.html">SignUp</a></button>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="trailer-container">
+        <p id="title">Latest Trailers</p>
+        <div class="scroll-container">
+            <button class="scroll-button left" onclick="scrollL()">&#9664;</button>
+            <div class="flex-container" id="scrollable">
+                <div class="trailer_vid">
+                    <video width="400" controls>
+                        <source src="videos/sample.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="description">
+                        <h4>Movie 1</h4>
+                        <p>This is the description for Movie 1.</p>
+                    </div>
+                </div>
+
+                <div class="trailer_vid">
+                    <video width="400" controls>
+                        <source src="videos/sample.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="description">
+                        <h4>Movie 2</h4>
+                        <p>This is the description for Movie 2.</p>
+                    </div>
+                </div>
+
+                <div class="trailer_vid">
+                    <video width="400" controls>
+                        <source src="videos/sample.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="description">
+                        <h4>Movie 3</h4>
+                        <p>This is the description for Movie 3.</p>
+                    </div>
+                </div>
+
+                <div class="trailer_vid">
+                    <video width="400" controls>
+                        <source src="videos/sample.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="description">
+                        <h4>Movie 4</h4>
+                        <p>This is the description for Movie 3.</p>
+                    </div>
+                </div>
+
+                <div class="trailer_vid">
+                    <video width="400" controls>
+                        <source src="videos/sample.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="description">
+                        <h4>Movie 5</h4>
+                        <p>This is the description for Video 3.</p>
+                    </div>
+                </div>
+
+            </div>
+            <button class="scroll-button right" onclick="scrollRight()">&#9654;</button>
+        </div>
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
