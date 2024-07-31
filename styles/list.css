@@ -8,6 +8,7 @@ body {
 .container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .main-content {
@@ -21,7 +22,6 @@ body {
 }
 
 .show-item {
-    margin-left: 20%;
     width: fit-content;
     display: flex;
     flex-direction: row;
@@ -59,6 +59,7 @@ body {
 }
 
 .user-info {
+    margin-left: 1px;
     margin-top: 20px;
     padding-bottom: 50px;
     padding-left: 10px;
@@ -72,19 +73,4 @@ body {
 
 h4 {
     margin-right: 25px;
-}
-
-@media (max-width: 768px) {
-    .container {
-        justify-content: center;
-        margin-left: 0px;
-    }
-
-    .main-content {
-        width: 100%;
-    }
-
-    .show-item {
-        margin-left: 0%;
-    }
 }

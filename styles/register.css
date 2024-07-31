@@ -14,7 +14,7 @@ input:valid {
 }
 
 .container {
-    width: 50%;
+    width: 80%;
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
@@ -33,6 +33,7 @@ input {
 }
 
 label {
+    margin-top: 12px;
     margin-bottom: 5px;
     margin-right: 20px;
     font-weight: bold;
@@ -62,6 +63,8 @@ select {
 .radio-group,
 .checkbox-group {
     margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -82,4 +85,10 @@ button:hover {
 #submit {
     width: 80%;
     margin-left: 10%;
+}
+
+@media (max-width: 1280px) {
+    .container {
+        width: 60%;
+    }
 }

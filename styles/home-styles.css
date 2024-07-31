@@ -164,4 +164,12 @@ header h1 {
         transform: translate(-50%, -80%);
         font-size: 22px;
     }
+
+    .movie-item {
+        width: 60%;
+    }
+
+    .reviews-container {
+        width: 60%;
+    }
 }
