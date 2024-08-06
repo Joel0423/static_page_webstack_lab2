@@ -1,8 +1,8 @@
-.navdiv a {
+.nav-div a {
     text-decoration: none;
 }
 
-.navbar {
+.nav-bar {
     background: rgb(20, 183, 220);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-right: 15px;
@@ -11,7 +11,7 @@
     border: 3px solid grey;
 }
 
-.navdiv {
+.nav-div {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -60,6 +60,7 @@
 }
 
 .navbarbuttons button {
+    margin-top: 12px;
     background-color: rgb(227, 217, 33);
     margin-left: 10px;
     border-radius: 10px;
@@ -79,8 +80,17 @@
     font-size: 15px;
 }
 
+.nav-div .logo {
+    margin-top: 16px;
+    width: 30px;
+}
+
+.nav-div .logo embed {
+    width: 150px;
+}
+
 @media (max-width: 768px) {
-    .navdiv {
+    .nav-div {
         flex-direction: column;
         align-items: center;
     }
