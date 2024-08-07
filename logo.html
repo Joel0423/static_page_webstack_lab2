@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMDb Logo</title>
+    <link rel="stylesheet" href="styles/logo.css">
+
+</head>
+
+<body>
+    <div class="canvas-container">
+        <canvas id="my-canvas" width="1350" height="406"></canvas>
+    </div>
+
+    <script>
+        var canvas = document.getElementById("my-canvas");
+        if (canvas.getContext) {
+            var ctx = canvas.getContext('2d');
+
+            var img = new Image();
+            img.onload = function () {
+                ctx.drawImage(img, canvas.width / 2 - img.width / 2, canvas.height / 2 - img.height / 2);
+            }
+            img.src = "images/MyMDb.svg";
+
+            ctx.fillStyle = "grey";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        }
+    </script>
+</body>
+
+</html>

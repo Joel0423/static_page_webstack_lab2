@@ -272,6 +272,14 @@ footer {
     color: white;
 }
 
+.fa-star,
+.fa-star-half {
+    margin-right: 8px;
+    color: gold;
+    filter: drop-shadow(3px 1px 1px #4444dd);
+    text-shadow: 0 0 3px #000;
+}
+
 @media (max-width: 768px) {
     .footerNav ul {
         flex-direction: column;
