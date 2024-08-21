@@ -1,0 +1,63 @@
+<!ENTITY act "Action">
+<!ENTITY sci "Sci-Fi">
+<!ENTITY cri "Crime">
+<!ENTITY dra "Drama">
+<!ENTITY thr "Thriller">
+<!ENTITY com "Comedy">
+<!ENTITY rom "Romance">
+<!ENTITY fan "Fantasy">
+
+<!ELEMENT Media (Movies, TVShows, Actors, Users)>
+<!ATTLIST Media xmlns:xsi CDATA #REQUIRED>
+<!ATTLIST Media xsi:schemaLocation CDATA #REQUIRED>
+
+<!ELEMENT Users (User+)>
+<!ELEMENT User (Username, Email, Password, DateOfBirth?, Gender?, JoinDate, ProfilePicture, Bio, Socials)>
+<!ATTLIST User UserID ID #REQUIRED>
+
+<!ELEMENT Actors (Actor+)>
+<!ELEMENT Actor (FirstName, LastName, DateOfBirth, Nationality, Gender, Biography, Awards, Website)>
+<!ATTLIST Actor ActorID ID #REQUIRED>
+
+<!ELEMENT Movies (Movie+)>
+<!ELEMENT Movie (Title, ReleaseDate, Genre, Director, Producer, Writer, Duration, Language, Country, Description)>
+<!ATTLIST Movie MediaID ID #REQUIRED>
+
+<!ELEMENT TVShows (TVShow+)>
+<!ELEMENT TVShow (Title, StartDate, EndDate?, Genre, Creator, Network, Seasons, Episodes, Language, Country, Description)>
+<!ATTLIST TVShow MediaID ID #REQUIRED>
+
+<!ELEMENT Username (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+<!ELEMENT Password (#PCDATA)>
+<!ELEMENT DateOfBirth (#PCDATA)>
+<!ELEMENT Gender (#PCDATA)>
+<!ELEMENT JoinDate (#PCDATA)>
+<!ELEMENT ProfilePicture (#PCDATA)>
+<!ELEMENT Bio (#PCDATA)>
+<!ELEMENT Socials (#PCDATA)>
+
+<!ELEMENT FirstName (#PCDATA)>
+<!ELEMENT LastName (#PCDATA)>
+<!ELEMENT Nationality (#PCDATA)>
+<!ELEMENT Biography (#PCDATA)>
+<!ELEMENT Awards (#PCDATA)>
+<!ELEMENT Website (#PCDATA)>
+
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT ReleaseDate (#PCDATA)>
+<!ELEMENT Genre (#PCDATA)>
+<!ELEMENT Director (#PCDATA)>
+<!ELEMENT Producer (#PCDATA)>
+<!ELEMENT Writer (#PCDATA)>
+<!ELEMENT Duration (#PCDATA)>
+<!ELEMENT Language (#PCDATA)>
+<!ELEMENT Country (#PCDATA)>
+<!ELEMENT Description (#PCDATA)>
+
+<!ELEMENT StartDate (#PCDATA)>
+<!ELEMENT EndDate (#PCDATA)>
+<!ELEMENT Creator (#PCDATA)>
+<!ELEMENT Network (#PCDATA)>
+<!ELEMENT Seasons (#PCDATA)>
+<!ELEMENT Episodes (#PCDATA)>

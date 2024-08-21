@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Media SYSTEM "data_definition.dtd">
+<?xml-stylesheet href="stylesheet.xslt" type="text/xsl"?>
+<Media xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://www.w3schools.com/Media schema.xsd">
+
+
+    <Movies>
+        <Movie MediaID="M-001">
+            <Title>The Inception</Title>
+            <ReleaseDate>2010-07-16</ReleaseDate>
+            <Genre>&act;, &sci;</Genre>
+            <Director>Christopher Nolan</Director>
+            <Producer>Emma Thomas</Producer>
+            <Writer>Christopher Nolan</Writer>
+            <Duration>120</Duration>
+            <Language>English</Language>
+            <Country>USA</Country>
+            <Description>A thief who steals corporate secrets through the use of dream-sharing
+                technology is given the inverse task of planting an idea into the mind of a CEO.</Description>
+        </Movie>
+        <Movie MediaID="M-002">
+            <Title>The Godfather</Title>
+            <ReleaseDate>1972-03-24</ReleaseDate>
+            <Genre>&cri;, &dra;</Genre>
+            <Director>Francis Ford Coppola</Director>
+            <Producer>Albert S. Ruddy</Producer>
+            <Writer>Mario Puzo, Francis Ford Coppola</Writer>
+            <Duration>175</Duration>
+            <Language>English</Language>
+            <Country>USA</Country>
+            <Description>The aging patriarch of an organized crime dynasty transfers control of his
+                clandestine empire to his reluctant son.</Description>
+        </Movie>
+    </Movies>
+
+
+    <TVShows>
+        <TVShow MediaID="M-003">
+            <Title>Breaking Bad</Title>
+            <StartDate>2008-01-20</StartDate>
+            <EndDate>2013-09-29</EndDate>
+            <Genre>&cri;, &dra;, &thr;</Genre>
+            <Creator>Vince Gilligan</Creator>
+            <Network>AMC</Network>
+            <Seasons>5</Seasons>
+            <Episodes>62</Episodes>
+            <Language>English</Language>
+            <Country>USA</Country>
+            <Description>A high school chemistry teacher turned methamphetamine manufacturing drug
+                dealer partners with a former student to secure his family's future.</Description>
+        </TVShow>
+        <TVShow MediaID="M-004">
+            <Title>Friends</Title>
+            <StartDate>1994-09-22</StartDate>
+            <EndDate>2004-05-06</EndDate>
+            <Genre>&com;, &rom;</Genre>
+            <Creator>David Crane, Marta Kauffman</Creator>
+            <Network>NBC</Network>
+            <Seasons>10</Seasons>
+            <Episodes>236</Episodes>
+            <Language>English</Language>
+            <Country>USA</Country>
+            <Description>Follows the personal and professional lives of six twenty to
+                thirty-something-year-old friends living in Manhattan.</Description>
+        </TVShow>
+    </TVShows>
+
+
+    <Actors>
+        <Actor ActorID="A-001">
+            <FirstName>Robert</FirstName>
+            <LastName>Downey Jr.</LastName>
+            <DateOfBirth>1965-04-04</DateOfBirth>
+            <Nationality>American</Nationality>
+            <Gender>Male</Gender>
+            <Biography>Famous for his role as Iron Man in the Marvel Cinematic Universe.</Biography>
+            <Awards>Academy Awards, Golden Globe Awards</Awards>
+            <Website>https://www.robertdowneyjr.com</Website>
+        </Actor>
+        <Actor ActorID="A-002">
+            <FirstName>Scarlett</FirstName>
+            <LastName>Johansson</LastName>
+            <DateOfBirth>1984-11-22</DateOfBirth>
+            <Nationality>American</Nationality>
+            <Gender>Female</Gender>
+            <Biography>Known for her roles in Lost in Translation, and as Black Widow in the Marvel
+                Cinematic Universe.</Biography>
+            <Awards>BAFTA Awards, Tony Awards</Awards>
+            <Website>https://www.scarlettjohansson.com</Website>
+        </Actor>
+    </Actors>
+
+
+    <Users>
+        <User UserID="U-001">
+            <Username>john_doe</Username>
+            <Email>john.doe@example.com</Email>
+            <Password>securepassword123</Password>
+            <DateOfBirth>1985-06-15</DateOfBirth>
+            <Gender>Male</Gender>
+            <JoinDate>2020-01-01</JoinDate>
+            <ProfilePicture>URL</ProfilePicture>
+            <Bio>Enthusiast of movies and TV shows.</Bio>
+            <Socials>https://twitter.com/johndoe</Socials>
+        </User>
+        <User UserID="U-002">
+            <Username>jane_smith</Username>
+            <Email>jane.smith@example.com</Email>
+            <Password>anotherpassword456</Password>
+            <DateOfBirth>1990-07-22</DateOfBirth>
+            <Gender>Female</Gender>
+            <JoinDate>2021-03-15</JoinDate>
+            <ProfilePicture>URL</ProfilePicture>
+            <Bio>Avid TV show reviewer.</Bio>
+            <Socials>https://instagram.com/janesmith</Socials>
+        </User>
+    </Users>
+
+</Media>

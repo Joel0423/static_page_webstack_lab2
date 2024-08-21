@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Root Element -->
+    <xs:element name="Media">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="Users">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="User" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Username" type="xs:string" />
+                                        <xs:element name="Email" type="xs:string" />
+                                        <xs:element name="Password" type="xs:string" />
+                                        <xs:element name="DateOfBirth" type="xs:date" minOccurs="0" />
+                                        <xs:element name="Gender" type="xs:string" minOccurs="0" />
+                                        <xs:element name="JoinDate" type="xs:date" />
+                                        <xs:element name="ProfilePicture" type="xs:base64Binary" />
+                                        <xs:element name="Bio" type="xs:string" />
+                                        <xs:element name="Socials" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="UserID" type="xs:ID" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Actors">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Actor" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="FirstName" type="xs:string" />
+                                        <xs:element name="LastName" type="xs:string" />
+                                        <xs:element name="DateOfBirth" type="xs:date" />
+                                        <xs:element name="Nationality" type="xs:string" />
+                                        <xs:element name="Gender" type="xs:string" />
+                                        <xs:element name="Biography" type="xs:string" />
+                                        <xs:element name="Awards" type="xs:string" />
+                                        <xs:element name="Website" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="ActorID" type="xs:ID" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Movies">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Movie" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Title" type="xs:string" />
+                                        <xs:element name="ReleaseDate" type="xs:date" />
+                                        <xs:element name="Genre" type="xs:string" />
+                                        <xs:element name="Director" type="xs:string" />
+                                        <xs:element name="Producer" type="xs:string" />
+                                        <xs:element name="Writer" type="xs:string" />
+                                        <xs:element name="Duration">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:int">
+                                                    <xs:minInclusive value="0" />
+                                                    <xs:maxInclusive value="600" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="Language" type="xs:string" />
+                                        <xs:element name="Country" type="xs:string" />
+                                        <xs:element name="Description" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="MediaID" type="xs:ID" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="TVShows">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="TVShow" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Title" type="xs:string" />
+                                        <xs:element name="StartDate" type="xs:date" />
+                                        <xs:element name="EndDate" type="xs:date" minOccurs="0" />
+                                        <xs:element name="Genre" type="xs:string" />
+                                        <xs:element name="Creator" type="xs:string" />
+                                        <xs:element name="Network" type="xs:string" />
+                                        <xs:element name="Seasons">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:int">
+                                                    <xs:minInclusive value="1" />
+                                                    <xs:maxInclusive value="30" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="Episodes">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:int">
+                                                    <xs:minInclusive value="1" />
+                                                    <xs:maxInclusive value="500" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="Language" type="xs:string" />
+                                        <xs:element name="Country" type="xs:string" />
+                                        <xs:element name="Description" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="MediaID" type="xs:ID" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
