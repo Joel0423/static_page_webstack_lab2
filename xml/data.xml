@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE Media SYSTEM "data_definition.dtd">
+<!-- <!DOCTYPE Media SYSTEM "data_definition.dtd"> -->
+<!DOCTYPE Genre [
+    <!ENTITY act "Action">
+    <!ENTITY sci "Sci-Fi">
+    <!ENTITY cri "Crime">
+    <!ENTITY dra "Drama">
+    <!ENTITY thr "Thriller">
+    <!ENTITY com "Comedy">
+    <!ENTITY rom "Romance">
+    <!ENTITY fan "Fantasy">
+]>
 <?xml-stylesheet href="stylesheet.xslt" type="text/xsl"?>
 <Media xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="https://www.w3schools.com/Media schema.xsd">
@@ -26,7 +36,7 @@
             <Director>Francis Ford Coppola</Director>
             <Producer>Albert S. Ruddy</Producer>
             <Writer>Mario Puzo, Francis Ford Coppola</Writer>
-            <Duration>175</Duration>
+            <Duration>120</Duration>
             <Language>English</Language>
             <Country>USA</Country>
             <Description>The aging patriarch of an organized crime dynasty transfers control of his

@@ -17,7 +17,7 @@
                                         <xs:element name="DateOfBirth" type="xs:date" minOccurs="0" />
                                         <xs:element name="Gender" type="xs:string" minOccurs="0" />
                                         <xs:element name="JoinDate" type="xs:date" />
-                                        <xs:element name="ProfilePicture" type="xs:base64Binary" />
+                                        <xs:element name="ProfilePicture" type="xs:string" />
                                         <xs:element name="Bio" type="xs:string" />
                                         <xs:element name="Socials" type="xs:string" />
                                     </xs:sequence>
