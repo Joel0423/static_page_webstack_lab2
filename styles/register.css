@@ -5,18 +5,10 @@ body {
     padding: 0;
 }
 
-input:invalid {
-    border: 2px dashed red;
-}
-
-input:valid {
-    border: 2px solid black;
-}
-
 .container {
-    width: 80%;
+    width: 50%;
     margin: 50px auto;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -27,9 +19,18 @@ h2 {
     margin-bottom: 20px;
 }
 
+#dob {
+    width: 20%;
+}
 
 input {
     margin-bottom: 15px;
+    margin-right: 20px;
+    width: 90%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 label {
@@ -39,18 +40,23 @@ label {
     font-weight: bold;
 }
 
-input,
 select,
 textarea {
-    width: 95%;
+    width: 93%;
     padding: 8px;
     margin-top: 10px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-.radio-group input,
-.checkbox-group input {
+textarea {
+    resize: none;
+    width: 90%;
+}
+
+.radio-group #gender_option_div input,
+.checkbox-group .checkbox_option_div input {
     margin-top: 15px;
     margin-right: 5px;
     width: 20px;
@@ -87,8 +93,26 @@ button:hover {
     margin-left: 10%;
 }
 
-@media (max-width: 1280px) {
+.input_group {
+    display: flex;
+    flex-direction: row;
+}
+
+i {
+    visibility: collapse;
+    margin: 20px 0 0 0;
+}
+
+.fa-circle-check {
+    color: rgb(0, 170, 0);
+}
+
+.fa-circle-xmark {
+    color: red;
+}
+
+@media (max-width: 720px) {
     .container {
-        width: 60%;
+        width: 40%;
     }
 }

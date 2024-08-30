@@ -42,11 +42,38 @@
             <Description>The aging patriarch of an organized crime dynasty transfers control of his
                 clandestine empire to his reluctant son.</Description>
         </Movie>
+        <Movie MediaID="M-003">
+            <Title>Inside Out 2</Title>
+            <ReleaseDate>2024-02-18</ReleaseDate>
+            <Genre>&com;, &dra;</Genre>
+            <Director> Kelsey Mann</Director>
+            <Producer>Mark Nielsen</Producer>
+            <Writer>Meg LeFauve ,Dave Holstein</Writer>
+            <Duration>130</Duration>
+            <Language>English</Language>
+            <Country>USA</Country>
+            <Description>Two years after her move to San Francisco, 13-year-old Riley Andersen is
+                entering high school. Her personified emotions—Joy, Sadness, Fear, Disgust, and
+                Anger—now oversee a newly formed element of Riley's mind.</Description>
+        </Movie>
+        <Movie MediaID="M-004">
+            <Title>Wonka</Title>
+            <ReleaseDate>2023-07-24</ReleaseDate>
+            <Genre>&com;, &fan;</Genre>
+            <Director>Paul king</Director>
+            <Producer>David heyman</Producer>
+            <Writer>Simon Farnaby, Paul King</Writer>
+            <Duration>120</Duration>
+            <Language>English</Language>
+            <Country>USA</Country>
+            <Description>willy Wonka, a young aspiring magician, inventor, and chocolatier, arrives
+                at the Galéries Gourmet with dreams of establishing his own chocolate shop.</Description>
+        </Movie>
     </Movies>
 
 
     <TVShows>
-        <TVShow MediaID="M-003">
+        <TVShow MediaID="M-005">
             <Title>Breaking Bad</Title>
             <StartDate>2008-01-20</StartDate>
             <EndDate>2013-09-29</EndDate>
@@ -60,7 +87,7 @@
             <Description>A high school chemistry teacher turned methamphetamine manufacturing drug
                 dealer partners with a former student to secure his family's future.</Description>
         </TVShow>
-        <TVShow MediaID="M-004">
+        <TVShow MediaID="M-006">
             <Title>Friends</Title>
             <StartDate>1994-09-22</StartDate>
             <EndDate>2004-05-06</EndDate>
@@ -73,6 +100,38 @@
             <Country>USA</Country>
             <Description>Follows the personal and professional lives of six twenty to
                 thirty-something-year-old friends living in Manhattan.</Description>
+        </TVShow>
+        <TVShow MediaID="M-007">
+            <Title>Simpsons</Title>
+            <StartDate>1989-12-17</StartDate>
+            <EndDate>2023-05-06</EndDate>
+            <Genre>&com;</Genre>
+            <Creator> Matt Groening</Creator>
+            <Network>FOX</Network>
+            <Seasons>35</Seasons>
+            <Episodes>801</Episodes>
+            <Language>English</Language>
+            <Country>USA</Country>
+            <Description>The Simpsons is an American animated sitcom created by Matt Groening for
+                the Fox Broadcasting Company. Developed by Groening, James L. Brooks, and
+                Sam Simon
+            </Description>
+        </TVShow>
+        <TVShow MediaID="M-008">
+            <Title>Young Sheldon</Title>
+            <StartDate>2017-09-25</StartDate>
+            <EndDate>2024-05-16</EndDate>
+            <Genre>&com;, &dra;</Genre>
+            <Creator>Chuck Lorre, Steven Molaro</Creator>
+            <Network>CBS</Network>
+            <Seasons>7</Seasons>
+            <Episodes>121</Episodes>
+            <Language>English</Language>
+            <Country>USA</Country>
+            <Description>The series follows Sheldon Cooper's early life as a child prodigy in the
+                fictional town of Medford, Texas as he grows up
+            </Description>
+
         </TVShow>
     </TVShows>
 
@@ -104,26 +163,26 @@
 
     <Users>
         <User UserID="U-001">
-            <Username>john_doe</Username>
-            <Email>john.doe@example.com</Email>
+            <Username>joe_abhi</Username>
+            <Email>joe.abhi@example.com</Email>
             <Password>securepassword123</Password>
-            <DateOfBirth>1985-06-15</DateOfBirth>
+            <DateOfBirth>2003-06-15</DateOfBirth>
             <Gender>Male</Gender>
             <JoinDate>2020-01-01</JoinDate>
             <ProfilePicture>URL</ProfilePicture>
             <Bio>Enthusiast of movies and TV shows.</Bio>
-            <Socials>https://twitter.com/johndoe</Socials>
+            <Socials>https://twitter.com/joeabhi24</Socials>
         </User>
         <User UserID="U-002">
-            <Username>jane_smith</Username>
-            <Email>jane.smith@example.com</Email>
+            <Username>maha_lakks</Username>
+            <Email>mlkshi@example.com</Email>
             <Password>anotherpassword456</Password>
-            <DateOfBirth>1990-07-22</DateOfBirth>
+            <DateOfBirth>2004-07-22</DateOfBirth>
             <Gender>Female</Gender>
             <JoinDate>2021-03-15</JoinDate>
             <ProfilePicture>URL</ProfilePicture>
             <Bio>Avid TV show reviewer.</Bio>
-            <Socials>https://instagram.com/janesmith</Socials>
+            <Socials>https://instagram.com/mahalakshmi__</Socials>
         </User>
     </Users>
 
