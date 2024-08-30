@@ -16,144 +16,168 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.min.js"
         integrity="sha256-Fb0zP4jE3JHqu+IBB9YktLcSjI1Zc6J2b6gTjB0LpoM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <div class="container">
-        <h2>Create your account</h2>
-        <form>
+<body class="bg-gray-100 m-0 p-0">
+    <div class="w-1/2 m-auto ps-5 bg-white rounded-[8px] shadow-xl">
+        <h2 class="text-center font-bold text-2xl text-cyan-800 mb-5">Create your account</h2>
+        <form id="register_form">
             <div class="form-group">
-                <label for="username">Username:</label>
-                <div class="input_group" id="username_input_div">
-                    <input type="text" id="username" name="username">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <i class="fa-regular fa-circle-xmark"></i>
+
+                <label class="mt-3 mb-1 me-4 font-bold" for="username">Username:</label>
+                <p id="username_error" class="text-rose-600"></p>
+                <div class="input_group flex flex-row" id="username_input_div">
+                    <input class="mb-3 me-4 mt-2 w-[90%] border-2 p-2 border-gray-700 rounded-md" type="text"
+                        id="username" name="username">
+                    <i class="fa-regular fa-circle-check mt-5 collapse text-green-600"></i>
+                    <i class="fa-regular fa-circle-xmark mt-5 collapse text-red-700"></i>
+                </div>
+
+
+                </br>
+
+
+                <label class="mt-3 mb-1 me-4 font-bold" for="email">Email:</label>
+                <p id="email_error" class="text-rose-600"></p>
+                <div class="input_group flex flex-row" id="email_input_div">
+                    <input class="mb-3 me-4 mt-2 w-[90%] border-2 p-2 border-gray-700 rounded-md" type="email"
+                        id="email" name="email">
+                    <i class="fa-regular fa-circle-check mt-5 collapse text-green-600"></i>
+                    <i class="fa-regular fa-circle-xmark mt-5 collapse text-red-700"></i>
                 </div>
 
                 </br>
 
 
-                <label for="email">Email:</label>
-                <div class="input_group" id="email_input_div">
-                    <input type="email" id="email" name="email">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <i class="fa-regular fa-circle-xmark"></i>
-                </div>
-                </br>
-
-
-                <label for="password">Password:</label>
-                <div class="input_group" id="password_input_div">
-                    <input type="password" id="password" name="password">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <i class="fa-regular fa-circle-xmark"></i>
+                <label class="mt-3 mb-1 me-4 font-bold" for="password">Password:</label>
+                <p id="password_error" class="text-rose-600"></p>
+                <div class="input_group flex flex-row" id="password_input_div">
+                    <input class="mb-3 me-4 mt-2 w-[90%] border-2 p-2 border-gray-700 rounded-md" type="password"
+                        id="password" name="password">
+                    <i class="fa-regular fa-circle-check mt-5 collapse text-green-600"></i>
+                    <i class="fa-regular fa-circle-xmark mt-5 collapse text-red-700"></i>
                 </div>
 
                 </br>
 
-                <label for="conf-password">Confirm Password:</label>
-                <div class="input_group" id="conf-password_input_div">
-                    <input type="password" id="conf-password" name="conf-password">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <i class="fa-regular fa-circle-xmark"></i>
+                <label class="mt-3 mb-1 me-4 font-bold" for="conf-password">Confirm Password:</label>
+                <p id="conf_password_error" class="text-rose-600"></p>
+                <div class="input_group flex flex-row" id="conf-password_input_div">
+                    <input class="mb-3 me-4 mt-2 w-[90%] border-2 p-2 border-gray-700 rounded-md" type="password"
+                        id="conf-password" name="conf-password">
+                    <i class="fa-regular fa-circle-check mt-5 collapse text-green-600"></i>
+                    <i class="fa-regular fa-circle-xmark mt-5 collapse text-red-700"></i>
                 </div>
 
                 </br>
 
 
-                <label for="dob">Date of Birth:</label>
-                <div class="input_group" id="dob_input_div">
-                    <input type="text" id="dob" name="dob" placeholder="YYYY-MM-DD">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <i class="fa-regular fa-circle-xmark"></i>
+                <label class="mt-3 mb-1 me-4 font-bold" for="dob">Date of Birth:</label>
+                <p id="dob_error" class="text-rose-600"></p>
+                <div class="input_group flex flex-row" id="dob_input_div">
+                    <input class="mb-3 me-4 mt-2 w-1/4 border-2 p-2 border-gray-700 rounded-md text-center min-w-1/4"
+                        type="text" id="dob" name="dob" placeholder="YYYY-MM-DD">
+                    <i class="fa-regular fa-circle-check mt-5 collapse text-green-600"></i>
+                    <i class="fa-regular fa-circle-xmark mt-5 collapse text-red-700"></i>
                 </div>
+
                 </br>
 
 
 
-                <label>Gender:</label>
-                <div class="radio-group">
+                <label class="mt-3 mb-1 me-4 font-bold">Gender:</label>
+                <p id="gender_error" class="text-rose-600"></p>
+                <div class="radio-group mb-4 flex flex-wrap">
                     <div id="gender_option_div">
-                        <input type="radio" id="male" name="gender" value="male">
-                        <label for="male">Male</label>
+                        <input class="mt-3 me-2 w-5" type="radio" id="male" name="gender" value="male">
+                        <label class="mt-3 mb-1 me-4 font-bold" for="male">Male</label>
 
-                        <input type="radio" id="female" name="gender" value="female">
-                        <label for="female">Female</label>
+                        <input class="mt-3 me-2 w-5" type="radio" id="female" name="gender" value="female">
+                        <label class="mt-3 mb-1 me-4 font-bold" for="female">Female</label>
 
-                        <input type="radio" id="other" name="gender" value="other">
-                        <label for="other">Other</label>
-                        <i class="fa-regular fa-circle-check"></i>
-                        <i class="fa-regular fa-circle-xmark"></i>
+                        <input class="mt-3 me-2 w-5" type="radio" id="other" name="gender" value="other">
+                        <label class="mt-3 mb-1 me-4 font-bold" for="other">Other</label>
+                        <i class="fa-regular fa-circle-check mt-5 collapse text-green-600"></i>
+                        <i class="fa-regular fa-circle-xmark mt-5 collapse text-red-700"></i>
                     </div>
                 </div>
+
                 </br>
 
 
-                <label for="profilePicture">Profile Picture:</label>
-                <input type="file" id="profilePicture" name="profilePicture">
+                <label class="mt-3 mb-1 me-4 font-bold" for="profilePicture">Profile Picture:</label>
+                <input class="mb-3 me-4 mt-2 w-[90%] border-2 p-2 border-gray-700 rounded-md" type="file"
+                    id="profilePicture" name="profilePicture">
                 </br>
 
 
-                <label for="bio">Bio:</label>
+                <label class="mt-3 mb-1 me-4 font-bold" for="bio">Bio:</label>
                 <br>
-                <textarea id="bio" name="bio" rows="4"></textarea>
+                <textarea class="w-[90%] resize-none border-2 p-2 mt-2 mb-4 border-gray-700 rounded-md" id="bio"
+                    name="bio" rows="4"></textarea>
                 </br>
 
                 <div id="genre_input_div">
-                    <label>Favourite Genres:</label>
-                    <i class="fa-regular fa-circle-check"></i>
-                    <i class="fa-regular fa-circle-xmark"></i>
+                    <label class="mt-3 mb-1 me-4 font-bold">Favourite Genres:</label>
+                    <i class="fa-regular fa-circle-check mt-5 collapse text-green-600"></i>
+                    <i class="fa-regular fa-circle-xmark mt-5 collapse text-red-700"></i>
+                </div>
+                <p id="genre_error" class="text-rose-600"></p>
+                <div class="checkbox-group mb-4 flex flex-wrap">
+                    <div class="checkbox_option_div">
+                        <input class="mt-3 me-2 w-5" type="checkbox" id="action" name="genre" value="action">
+                        <label class="mt-3 mb-1 me-4 font-bold" for="facebook">Action</label>
+                    </div>
+
+                    <div class="checkbox_option_div">
+                        <input class="mt-3 me-2 w-5" type="checkbox" id="adventure" name="genre" value="adventure">
+                        <label class="mt-3 mb-1 me-4 font-bold" for="twitter">Adventure</label>
+                    </div>
+
+                    <div class="checkbox_option_div">
+                        <input class="mt-3 me-2 w-5" type="checkbox" id="romance" name="genre" value="romance">
+                        <label class="mt-3 mb-1 me-4 font-bold" for="instagram">Romance</label>
+                    </div>
+
+                    <div class="checkbox_option_div">
+                        <input class="mt-3 me-2 w-5" type="checkbox" id="horror" name="genre" value="horror">
+                        <label class="mt-3 mb-1 me-4 font-bold" for="instagram">Horror</label>
+                    </div>
+
+                    <div class="checkbox_option_div">
+                        <input class="mt-3 me-2 w-5" type="checkbox" id="Science Fiction" name="genre"
+                            value="Science Fiction">
+                        <label class="mt-3 mb-1 me-4 font-bold" for="instagram">Science Fiction</label>
+                    </div>
+
+                    <div class="checkbox_option_div">
+                        <input class="mt-3 me-2 w-5" type="checkbox" id="Comedy" name="genre" value="Comedy">
+                        <label class="mt-3 mb-1 me-4 font-bold" for="instagram">Comedy</label>
+                    </div>
                 </div>
 
-                <div class="checkbox-group">
-                    <div class="checkbox_option_div">
-                        <input type="checkbox" id="action" name="genre" value="action">
-                        <label for="facebook">Action</label>
-                    </div>
-
-                    <div class="checkbox_option_div">
-                        <input type="checkbox" id="adventure" name="genre" value="adventure">
-                        <label for="twitter">Adventure</label>
-                    </div>
-
-                    <div class="checkbox_option_div">
-                        <input type="checkbox" id="romance" name="genre" value="romance">
-                        <label for="instagram">Romance</label>
-                    </div>
-
-                    <div class="checkbox_option_div">
-                        <input type="checkbox" id="horror" name="genre" value="horror">
-                        <label for="instagram">Horror</label>
-                    </div>
-
-                    <div class="checkbox_option_div">
-                        <input type="checkbox" id="Science Fiction" name="genre" value="Science Fiction">
-                        <label for="instagram">Science Fiction</label>
-                    </div>
-
-                    <div class="checkbox_option_div">
-                        <input type="checkbox" id="Comedy" name="genre" value="Comedy">
-                        <label for="instagram">Comedy</label>
-                    </div>
-                </div>
                 </br>
 
                 <div id="country_input_div">
-                    <label for="country">Country:</label>
-                    <i class="fa-regular fa-circle-check"></i>
-                    <i class="fa-regular fa-circle-xmark"></i>
+                    <label class="mt-3 mb-1 me-4 font-bold" for="country">Country:</label>
+                    <i class="fa-regular fa-circle-check mt-5 collapse text-green-600"></i>
+                    <i class="fa-regular fa-circle-xmark mt-5 collapse text-red-700"></i>
                 </div>
-
-                <select id="country" name="country">
+                <p id="country_error" class="text-rose-600"></p>
+                <select class="w-[93%] border-2 p-2 mt-2 mb-4 border-gray-700 rounded-md" id="country" name="country">
                     <option value="">Select your country</option>
                     <option value="us">United States</option>
                     <option value="ca">India</option>
                     <option value="uk">United Kingdom</option>
                     <option value="au">Australia</option>
                 </select>
+
                 </br>
             </div>
-            <button type="button" id="submit">Submit</button>
+            <button
+                class="w-10/12 mx-12 p-3 rounded-md bg-cyan-600 text-white font-bold mb-8 transition ease-in-out delay-50 hover:bg-red-500"
+                type="button" id="submitBtn">Submit</button>
         </form>
     </div>
 </body>
