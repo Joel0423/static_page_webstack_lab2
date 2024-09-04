@@ -5,224 +5,198 @@
         <html>
             <head>
                 <title>Media Review Website</title>
-                <style>
-                    table {
-                    width: 100%;
-                    border-collapse: collapse;
-                    margin-bottom: 20px;
-                    }
-                    td {
-                    border: 2px dashed yellow;
-                    padding: 8px;
-                    text-align: left;
-                    background-color: grey;
-                    color:white;
-                    }
-                    th {
-                    border: 2px solid black;
-                    color: white;
-                    background-color: red;
-                    padding: 8px;
-                    text-align: left;
-                    }
-                    h2, h1 {
-                    text-align: center;
-                    }
-                    body{
-                    background-color: lightblue;
-                    }
-                </style>
+                <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+                    rel="stylesheet" />
             </head>
-            <body>
-                <!-- Movies Table -->
-                <h1>Media Review Website</h1>
-                <h2>Movies</h2>
-                <table>
-                    <tr>
-                        <th>Title</th>
-                        <th>Release Date</th>
-                        <th>Genre</th>
-                        <th>Director</th>
-                        <th>Producer</th>
-                        <th>Writer</th>
-                        <th>Duration (min)</th>
-                        <th>Language</th>
-                        <th>Country</th>
-                        <th>Description</th>
+            <body class="bg-blue-200">
+
+                <h1 class="text-3xl font-bold text-center mb-4">Media Review Website</h1>
+                <h2 class="text-2xl font-semibold text-center mb-2">Movies</h2>
+                <table class="w-full border-collapse mb-6">
+                    <tr class="bg-red-500 text-white">
+                        <th class="border border-black px-4 py-2">Title</th>
+                        <th class="border border-black px-4 py-2">Release Date</th>
+                        <th class="border border-black px-4 py-2">Genre</th>
+                        <th class="border border-black px-4 py-2">Director</th>
+                        <th class="border border-black px-4 py-2">Producer</th>
+                        <th class="border border-black px-4 py-2">Writer</th>
+                        <th class="border border-black px-4 py-2">Duration (min)</th>
+                        <th class="border border-black px-4 py-2">Language</th>
+                        <th class="border border-black px-4 py-2">Country</th>
+                        <th class="border border-black px-4 py-2">Description</th>
                     </tr>
                     <xsl:for-each select="Media/Movies/Movie">
-                        <tr>
-                            <td>
+                        <tr class="bg-gray-700 text-white">
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="Title" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="ReleaseDate" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="Genre" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="Director" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="Producer" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="Writer" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="Duration" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="Language" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="Country" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="Description" />
                             </td>
                         </tr>
                     </xsl:for-each>
                 </table>
 
-                <!-- TV Shows Table -->
-                <h2>TV Shows</h2>
-                <table>
-                    <tr>
-                        <th>Title</th>
-                        <th>Start Date</th>
-                        <th>End Date</th>
-                        <th>Genre</th>
-                        <th>Creator</th>
-                        <th>Network</th>
-                        <th>Seasons</th>
-                        <th>Episodes</th>
-                        <th>Language</th>
-                        <th>Country</th>
-                        <th>Description</th>
+
+                <h2 class="text-2xl font-semibold text-center mb-2">TV Shows</h2>
+                <table class="w-full border-collapse mb-6">
+                    <tr class="bg-red-500 text-white">
+                        <th class="border border-black px-4 py-2">Title</th>
+                        <th class="border border-black px-4 py-2">Start Date</th>
+                        <th class="border border-black px-4 py-2">End Date</th>
+                        <th class="border border-black px-4 py-2">Genre</th>
+                        <th class="border border-black px-4 py-2">Creator</th>
+                        <th class="border border-black px-4 py-2">Network</th>
+                        <th class="border border-black px-4 py-2">Seasons</th>
+                        <th class="border border-black px-4 py-2">Episodes</th>
+                        <th class="border border-black px-4 py-2">Language</th>
+                        <th class="border border-black px-4 py-2">Country</th>
+                        <th class="border border-black px-4 py-2">Description</th>
                     </tr>
                     <xsl:for-each select="Media/TVShows/TVShow">
-                        <tr>
-                            <td>
+                        <tr class="bg-gray-700 text-white">
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="Title" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="StartDate" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="EndDate" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="Genre" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="Creator" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="Network" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="Seasons" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="Episodes" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="Language" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="Country" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="Description" />
                             </td>
                         </tr>
                     </xsl:for-each>
                 </table>
 
-                <!-- Actors Table -->
-                <h2>Actors</h2>
-                <table>
-                    <tr>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Date of Birth</th>
-                        <th>Nationality</th>
-                        <th>Gender</th>
-                        <th>Biography</th>
-                        <th>Awards</th>
-                        <th>Website</th>
+
+                <h2 class="text-2xl font-semibold text-center mb-2">Actors</h2>
+                <table class="w-full border-collapse mb-6">
+                    <tr class="bg-red-500 text-white">
+                        <th class="border border-black px-4 py-2">First Name</th>
+                        <th class="border border-black px-4 py-2">Last Name</th>
+                        <th class="border border-black px-4 py-2">Date of Birth</th>
+                        <th class="border border-black px-4 py-2">Nationality</th>
+                        <th class="border border-black px-4 py-2">Gender</th>
+                        <th class="border border-black px-4 py-2">Biography</th>
+                        <th class="border border-black px-4 py-2">Awards</th>
+                        <th class="border border-black px-4 py-2">Website</th>
                     </tr>
                     <xsl:for-each select="Media/Actors/Actor">
-                        <tr>
-                            <td>
+                        <tr class="bg-gray-700 text-white">
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="FirstName" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="LastName" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="DateOfBirth" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="Nationality" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="Gender" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="Biography" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="Awards" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="Website" />
                             </td>
                         </tr>
                     </xsl:for-each>
                 </table>
 
-                <!-- Users Table -->
-                <h2>Users</h2>
-                <table>
-                    <tr>
-                        <th>Username</th>
-                        <th>Email</th>
-                        <th>Date of Birth</th>
-                        <th>Gender</th>
-                        <th>Join Date</th>
-                        <th>Bio</th>
-                        <th>Socials</th>
+
+                <h2 class="text-2xl font-semibold text-center mb-2">Users</h2>
+                <table class="w-full border-collapse mb-6">
+                    <tr class="bg-red-500 text-white">
+                        <th class="border border-black px-4 py-2">Username</th>
+                        <th class="border border-black px-4 py-2">Email</th>
+                        <th class="border border-black px-4 py-2">Date of Birth</th>
+                        <th class="border border-black px-4 py-2">Gender</th>
+                        <th class="border border-black px-4 py-2">Join Date</th>
+                        <th class="border border-black px-4 py-2">Bio</th>
+                        <th class="border border-black px-4 py-2">Socials</th>
                     </tr>
                     <xsl:for-each select="Media/Users/User">
-                        <tr>
-                            <td>
+                        <tr class="bg-gray-700 text-white">
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="Username" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="Email" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="DateOfBirth" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="Gender" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="JoinDate" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="Bio" />
                             </td>
-                            <td>
+                            <td class="border border-yellow-500 px-4 py-2">
                                 <xsl:value-of select="Socials" />
                             </td>
                         </tr>
                     </xsl:for-each>
                 </table>
-
             </body>
         </html>
     </xsl:template>

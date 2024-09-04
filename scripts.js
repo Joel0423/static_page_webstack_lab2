@@ -23,7 +23,7 @@ document.getElementById('display-map').addEventListener('click', () => {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
     L.marker([latitude, longitude]).addTo(map)
-        .bindPopup('Specified location')
+        .bindPopup('Company Location')
         .openPopup();
 
     window.scrollBy({
@@ -46,10 +46,16 @@ function addMarkerAndRoute() {
     let newLatLng = [12.936157106326533, 77.60591792549495]; // Coordinates for the second marker
 
     // Adding the second marker
-    let marker = L.marker(newLatLng).addTo(map).bindPopup('Destination').openPopup();
+    let marker = L.marker(newLatLng).addTo(map).bindPopup('Start Point').openPopup();
 
     // Drawing a route between the two markers using a polyline
-    let route = L.polyline([existingLatLng, newLatLng], { color: 'blue' }).addTo(map);
+    //let route = L.polyline([existingLatLng, newLatLng], { color: 'blue' }).addTo(map);
+    let route = L.Routing.control({
+        waypoints: [
+            L.latLng(12.936157106326533, 77.60591792549495),
+            L.latLng(13.02474723210269, 77.63456618139959)
+        ]
+    }).addTo(map);
 
     // Adjust the map view to fit both markers and the route
     map.fitBounds(route.getBounds());
